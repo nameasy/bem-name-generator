@@ -1,0 +1,88 @@
+<!doctype html>
+<!-- Design by Stepan Lyubavtsev (https://lyubavtsev.ru/) -->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<title>BEM Name Generator</title>
+		<meta content="BEM Name Generator" name="title" />
+		<meta content="An application that greatly simplifies the creation of BEM-based class names" />
+		<meta content="website" property="og:type" />
+		<meta content="" property="og:url" />
+		<meta content="BEM Name Generator" property="og:title" />
+		<meta content="A mini-application to help you easily find the initial value of the CSS properties you need" property="og:description" />
+		<meta content="summary_large_image" property="twitter:card" />
+		<meta content="" property="twitter:url" />
+		<meta content="BEM Name Generator" property="twitter:title" />
+		<meta content="A mini-application to help you easily find the initial value of the CSS properties you need" property="twitter:description" />
+		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Syne:wght@400..800&display=swap" rel="stylesheet" />
+		<script type="module" crossorigin src="assets/index-WT1w49QE.js"></script>
+		<link rel="stylesheet" crossorigin href="assets/index-BpxYbduk.css">
+	</head>
+
+	<body>
+		<div class="page">
+			<main class="main">
+				<section class="section">
+					<h1 class="section__title">BEM Name Generator</h1>
+					<form class="form section__form">
+						<fieldset class="form__fieldset">
+							<legend class="visually-hidden"></legend>
+							<div class="form__group-wrapper">
+								<div class="form__group">
+									<label class="form__label" for="block">Block</label>
+									<input autocomplete="off" class="input form__control" id="block-input" type="text" />
+									<div class="dropdown" id="block-dropdown"></div>
+								</div>
+							</div>
+							<div class="form__group-wrapper">
+								<div class="form__group">
+									<label class="form__label" for="element">Element</label>
+									<input autocomplete="off" class="input form__control" id="element-input" type="text" />
+									<div class="dropdown" id="element-dropdown"></div>
+								</div>
+							</div>
+							<div class="form__group-wrapper">
+								<div class="form__group">
+									<label class="form__label" for="modifier">Modifier</label>
+									<input autocomplete="off" class="input form__control" id="modifier-input" type="text" />
+									<div class="dropdown" id="modifier-dropdown"></div>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="form__fieldset form__fieldset--config">
+							<legend class="visually-hidden"></legend>
+							<div class="switch">
+								<label class="switch__item">
+									<input checked class="visually-hidden switch__control" id="separator-1" name="separator" type="radio" value="--" />
+									<span class="switch__label">--</span>
+								</label>
+								<label class="switch__item">
+									<input class="visually-hidden switch__control" id="separator-2" name="separator" type="radio" value="_" />
+									<span class="switch__label">_</span>
+								</label>
+							</div>
+							<div class="form__hint">Modifier Separator</div>
+						</fieldset>
+					</form>
+					<div class="result section__result">
+						<div class="result__text result__text--is-disabled" id="result-text">The result appears here</div>
+					</div>
+					<div class="section__actions">
+						<button class="button section__button section__button--generate" id="generate-button" type="button">Generate</button>
+						<button class="button section__button section__button--copy" id="copy-button" type="button">Copy result</button>
+					</div>
+				</section>
+				<div class="frame">
+					<div class="frame__image">class<br />→ var</div>
+					<div class="frame__text">
+						<a class="link frame__link" href="https://nameasy.github.io/tools/class-to-var.html">To convert a css class to a js variable, use the converter</a>
+					</div>
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="footer__text">Project by <a class="link" href="http://mywonderful.website/">Stepan Lyubavtsev</a></div>
+			</footer>
+		</div>
+	</body>
+</html>
